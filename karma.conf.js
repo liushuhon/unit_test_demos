@@ -16,7 +16,7 @@ module.exports = function(config) {
         },
         webpack: webpackConfig,
         reporters: ['spec'],
-        browsers: ['Chrome'],
+        browsers: ['PhantomJS'],
         singleRun: true
     })
 };

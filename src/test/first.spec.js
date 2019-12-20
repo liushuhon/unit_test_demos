@@ -6,6 +6,6 @@ describe('my first describe', function() {
     });
 
     it('false is false',function() {
-        expect(false).to.be.true;
+        expect(false).to.be.false;
     })
 })

@@ -22,7 +22,7 @@ describe('字母开头，允许5-16字节，允许字母数字下划线组合', 
         expect(reg.test(randomString.generate(16))).to.be.true;
     });
     it('5 length should true', function() {
-        expect(reg.test(randomString.generate(5))).to.be.true;
+        expect(reg.test('abcdf')).to.be.true;
     });
     it('4 length should false', function() {
         expect(reg.test(randomString.generate(4))).to.be.false;

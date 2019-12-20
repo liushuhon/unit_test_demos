@@ -6,7 +6,8 @@
         "serve": "vue-cli-service serve",
         "build": "vue-cli-service build",
         "lint": "vue-cli-service lint",
-        "test": "karma start karma.conf.js",
+        "test": "karma start karma.conf.js && npm run codecov",
+        "codecov": "codecov",
         "mocha": "mocha src/test/**.spec.js --watch"
     },
     "dependencies": {

@@ -17,7 +17,5 @@ describe('常见的邮箱格式，支持四级域名', function() {
     it('segma@cisdi.com.cn should true', function() {
         expect(reg.test('segma@cisdi.com.cn')).to.be.true;
     });
-    it('segma@cisdi.com.cn.in should true', function() {
-        expect(reg.test('segma@cisdi.com.cn.in')).to.be.true;
-    });
+
 });

@@ -6,7 +6,7 @@ module.exports = function(config) {
             'chai'
         ],
         files: [
-            'src/test/**/*.spec.js'   //tests目录下，所有.spce.js结尾的测试文件
+            'src/component-test/**/*.spec.js'   //tests目录下，所有.spce.js结尾的测试文件
         ],
         preprocessors: {
             '**/*.spec.js': [
@@ -26,7 +26,7 @@ module.exports = function(config) {
                 { type: 'text-summary' }
             ]
         },
-        browsers: ['PhantomJS'],
+        browsers: ['Chrome'],
         singleRun: true
     })
 };

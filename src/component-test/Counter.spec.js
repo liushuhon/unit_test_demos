@@ -6,9 +6,12 @@ import Counter from '../components/Counter';
 import { mount } from "@vue/test-utils";
 
 describe('Counter.vue', () => {
-    it('should increments count when button is clicked', () => {
+    it('should increments count when button is clicked', (done) => {
         const wrapper = mount(Counter);
         wrapper.find('button').trigger('click');
-        expect(wrapper.vm.count).to.equal(1);
+        wrapper.vm.$nextTick(() => {
+            expect(wrapper.vm.count).to.equal(1);
+            done();
+        })
     });
 });

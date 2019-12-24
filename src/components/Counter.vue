@@ -15,7 +15,9 @@ export default {
     },
     methods: {
         increment() {
-            this.count++
+            setTimeout(() => {
+                this.count++
+            }, 1000);
         }
     }
 }

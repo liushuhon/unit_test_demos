@@ -1,10 +1,9 @@
 let expect = require('chai').expect;
-// let Counter = require('../components/Counter');
-// let shallowMount = require('@vue/test-utils').shallowMount;
-// import expect from 'chai';
 import Counter from '../components/Counter';
 import { mount } from "@vue/test-utils";
 import flushPromise from 'flush-promises';
+require('babel-polyfill');
+
 
 describe('Counter.vue', () => {
     it('should increments count when button is clicked', async () => {

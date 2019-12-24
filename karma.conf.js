@@ -15,7 +15,10 @@ module.exports = function(config) {
             ]
         },
         webpack: webpackConfig,
-        reporters: ['spec','coverage'],
+        reporters: [
+            'spec',
+            'coverage'
+        ],
         coverageReporter: {
             // 配置生成的代码覆盖率文件存放位置
             dir: './coverage',
@@ -26,7 +29,7 @@ module.exports = function(config) {
                 { type: 'text-summary' }
             ]
         },
-        browsers: ['Chrome'],
+        browsers: ['PhantomJS'],
         singleRun: true
     })
 };

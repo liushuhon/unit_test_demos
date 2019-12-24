@@ -15,9 +15,18 @@ export default {
     },
     methods: {
         increment() {
-            setTimeout(() => {
-                this.count++
-            }, 1000);
+            // let _this = this;
+            return new Promise((resolve, reject) => {
+                if (this.count === 0) {
+                    resolve(1);
+                } else {
+                    reject('error')
+                }
+            }).then(() => {
+                this.count++;
+            }).catch((err) => {
+                console.log(err)
+            })
         }
     }
 }

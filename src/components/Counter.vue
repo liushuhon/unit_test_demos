@@ -1,11 +1,12 @@
 <template>
     <div>
         {{count}}
-        <button @click="increment">自增</button>
+        <el-button @click="increment">自增</el-button>
     </div>
 </template>
 
 <script>
+
 export default {
     name: "Counter",
     data() {
@@ -15,9 +16,8 @@ export default {
     },
     methods: {
         increment() {
-            // let _this = this;
             return new Promise((resolve, reject) => {
-                if (this.count === 0) {
+                if (typeof this.count !== "undefined") {
                     resolve(1);
                 } else {
                     reject('error')

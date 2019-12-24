@@ -29,6 +29,7 @@
         "babel-polyfill": "^6.26.0",
         "chai": "^4.2.0",
         "codecov": "^3.6.1",
+        "element-ui": "^2.13.0",
         "eslint": "^5.16.0",
         "eslint-plugin-vue": "^5.0.0",
         "karma": "^4.4.1",
